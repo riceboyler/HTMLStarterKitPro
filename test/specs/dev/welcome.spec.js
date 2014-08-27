@@ -14,17 +14,5 @@ describe('viewmodels/welcome', function() {
         it('should have a "displayName" property', function() {
             expect(a.displayName).toBeDefined();
         });
-
-        it('should have a "description" property', function() {
-            expect(a.description).toBeDefined();
-        });
-
-        it('should have a "features" property', function() {
-            expect(a.features).toBeDefined();
-        });
-
-        it('features should be of type Array', function(){
-            expect(a.features.length).toBeDefined();
-        });
     });
 });
