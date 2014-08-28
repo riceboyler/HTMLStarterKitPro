@@ -1,4 +1,4 @@
-define(['bindings/ui', 'knockout'], function(ui, ko) {
+define(['bindings/ui', 'knockout', 'plugins/router'], function(ui, ko, router) {
     var vm = {
         tresta: ko.observable(false),
         avatar: ko.observable(false),
@@ -19,7 +19,7 @@ define(['bindings/ui', 'knockout'], function(ui, ko) {
 
     vm.next = function() {
         router.navigate("auth");
-    }
+    };
 
     return vm;
 });

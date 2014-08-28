@@ -1,0 +1,31 @@
+<section class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Who Are You?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h2>JavaScript</h2>
+                <input type="number" data-bind="value: jsUsers, visible: showJSInput, event: { blur: blurJS }" />
+                <h3 data-bind="text: jsUsers() + ' Users', visible: !showJSInput()"></h3>
+            </div>
+            <div class="col-lg-3">
+                <h2>Knockout</h2>
+                <input type="number" data-bind="value: koUsers, visible: showKOInput, event: { blur: blurKO }" />
+                <h3 data-bind="text: koUsers() + ' Users', visible: !showKOInput()"></h3>
+            </div>
+            <div class="col-lg-3">
+                <h2>Durandal</h2>
+                <input type="number" data-bind="value: durandalUsers, visible: showDurandalInput, event: { blur: blurDurandal }" />
+                <h3 data-bind="text: durandalUsers() + ' Users', visible: !showDurandalInput()"></h3>
+            </div>
+            <div class="col-lg-3">
+                <h2>Angular</h2>
+                <input type="number" data-bind="value: ngUsers, visible: showNgInput, event: { blur: blurNg }" />
+                <h3 data-bind="text: ngUsers() + ' Users', visible: !showNgInput()"></h3>
+            </div>
+        </div>
+    </div>
+</section>
