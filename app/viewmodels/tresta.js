@@ -18,7 +18,7 @@ define(['bindings/ui', 'knockout', 'plugins/router'], function(ui, ko, router) {
     };
 
     vm.next = function() {
-        router.navigate("auth");
+        router.navigate("elephant");
     };
 
     return vm;

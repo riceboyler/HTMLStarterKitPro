@@ -4,5 +4,5 @@ define(['knockout'], function(ko) {
         koUsers: ko.observable(),
         durUsers: ko.observable(),
         ngUsers: ko.observable()
-    }
+    };
 });

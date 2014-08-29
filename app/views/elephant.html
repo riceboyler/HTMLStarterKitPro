@@ -1,0 +1,10 @@
+<section class="text-center">
+    <div class="container">
+        <div class="row" data-bind="fadeVisible: !demiseVis(), click: switchPic">
+            <img src="/css/images/elephantRoom.jpg" alt="" />
+        </div>
+        <div class="row" data-bind="fadeVisible: demiseVis">
+            <img src="/css/images/rumors.jpg" alt="" data-bind="fadeVisible: demiseVis, click: next" />
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<section class="text-center">
+    <div class="container">
+        <div class="row">
+            <h1>Get SOLID Man!</h1>
+        </div>
+        <div class="row bg-primary" data-bind="click: focus">
+            <div class="col-lg-2"><h1>S</h1></div>
+            <div class="col-lg-10"><h3>Single Responsibility</div>
+        </div>
+        <div class="row bg-warning" data-bind="slideVisible: !focused()">
+            <div class="col-lg-2"><h1>O</h1></div>
+            <div class="col-lg-10"><h3>Open/Closed</h3></div>
+        </div>
+        <div class="row bg-info" data-bind="slideVisible: !focused()">
+            <div class="col-lg-2"><h1>L</h1></div>
+            <div class="col-lg-10"><h3>Liskov Substitution</h3></div>
+        </div>
+        <div class="row bg-danger" data-bind="slideVisible: !focused()">
+            <div class="col-lg-2"><h1>I</h1></div>
+            <div class="col-lg-10"><h3>Interface Segregation</h3></div>
+        </div>
+        <div class="row bg-success">
+            <div class="col-lg-2"><h1>D</h1></div>
+            <div class="col-lg-10"><h3>Dependency Injection</h3></div>
+        </div>
+        <br/ >
+        <div class="row"><button class="btn btn-primary btn-lg" data-bind="slideVisible: focused, click: next"><i class="fa fa-eyedropper"></i>&nbsp;Injections R Us</button></div>
+    </div>
+</section>

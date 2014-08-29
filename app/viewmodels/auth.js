@@ -1,4 +1,4 @@
-define(['bindings/ui', 'knockout', '../app'], function(ui, ko, appVar) {
+define(['bindings/ui', 'knockout', '../app', 'plugins/router'], function(ui, ko, appVar, router) {
     var vm = {
         jsUsers: appVar.jsUsers,
         koUsers: appVar.koUsers,
@@ -30,6 +30,9 @@ define(['bindings/ui', 'knockout', '../app'], function(ui, ko, appVar) {
 
     vm.nextStep = function() {
         vm.activeStep(vm.activeStep() + 1);
+        if(vm.activeStep() > 3) {
+            router.navigate("hotness");
+        }
     };
 
     vm.showWerner = function() {

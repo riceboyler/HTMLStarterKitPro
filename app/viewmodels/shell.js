@@ -9,12 +9,15 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
+                { route: 'elephant', title: 'Mammoths', moduleId: 'viewmodels/elephant', nav: false},
                 { route: 'whoAmI', title: 'Who Am I?', moduleId: 'viewmodels/whoAmI', nav: true },
                 { route: 'tresta', title: 'What I Do (Now)', moduleId: 'viewmodels/tresta', nav: true },
+                { route: 'solid', title: 'SOLID, Man', moduleId: 'viewmodels/solid', nav: true},
+                { route: 'di', title: 'DI or Die', moduleId: 'viewmodels/di', nav: true },
                 { route: 'auth', title: 'Who Are You?', moduleId: 'viewmodels/auth', nav: true },
-                { route: 'hotness', title: 'Change-Up', moduleId: 'viewmodels/transitions', nav: true },
-                { route: 'widgets', title: 'Wedgie', moduleId: 'viewmodels/widgets', nav: true },
-                { route: 'routing', title: 'I-95', moduled: 'viewmodels/routing', nav: true}
+                { route: 'hotness', title: 'Make It Hot', moduleId: 'viewmodels/hotness', nav: true },
+                { route: 'widgets', title: 'Widgetize', moduleId: 'viewmodels/widgets', nav: true },
+                { route: 'routing', title: 'I-75', moduled: 'viewmodels/routing', nav: true}
             ]).buildNavigationModel();
 
             return router.activate();

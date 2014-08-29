@@ -1,4 +1,4 @@
-define(['bindings/ui', 'knockout'], function(ui, ko) {
+define(['bindings/ui', 'knockout', 'plugins/router'], function(ui, ko, router) {
     var vm = {
         step1Visible: ko.observable(false),
         step2: ko.observable(false),
@@ -15,6 +15,10 @@ define(['bindings/ui', 'knockout'], function(ui, ko) {
 
     vm.showStep3 = function() {
         vm.step3(true);
+    };
+
+    vm.next = function() {
+        router.navigate("tresta");
     };
 
     vm.activate = function() {

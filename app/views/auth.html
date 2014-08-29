@@ -48,9 +48,17 @@
             <div class="col-lg-10">
                 <h2>DurandalAuth</h2>
                 <ul class="list-unstyled">
-                    <li><a href="http://durandalauth.azurewebsites.net">http://durandalauth.azurewebsites.net</a></li>
-                    <li><a href="https://github.com/yagopv/durandalaut">https://github.com/yagopv/durandalaut</a>h</li>
+                    <li><a href="http://durandalauth.azurewebsites.net" target="_blank">http://durandalauth.azurewebsites.net</a>
+                    </li>
+                    <li><a href="https://github.com/yagopv/durandalauth" target="_blank">https://github.com/yagopv/durandalauth</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" data-bind="slideVisible: activeStep() === 3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>My Name Is My Passport, Verify Me</h1>
             </div>
         </div>
         <div class="row bg-warning">
@@ -68,6 +76,10 @@
             </div>
         </div>
     </div>
-
-    <button class="btn btn-primary" data-bind="click: nextStep"><i class="fa fa-arrow-right"></i>&nbsp;Moving On...</button>
+    <br />
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-primary" data-bind="click: nextStep"><i class="fa fa-arrow-right"></i>&nbsp;Moving On...</button>
+        </div>
+    </div>
 </section>
