@@ -4,26 +4,69 @@
             <h1>Get SOLID Man!</h1>
         </div>
         <div class="row bg-primary" data-bind="click: focus">
-            <div class="col-lg-2"><h1>S</h1></div>
-            <div class="col-lg-10"><h3>Single Responsibility</div>
+            <div class="col-lg-2">
+                <h1>S</h1>
+            </div>
+            <div class="col-lg-10">
+                <h1>Single Responsibility</h1>
+                <div data-bind="compose: singleVM"></div>
+            </div>
+
         </div>
         <div class="row bg-warning" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2"><h1>O</h1></div>
-            <div class="col-lg-10"><h3>Open/Closed</h3></div>
+            <div class="col-lg-2">
+                <h1>O</h1>
+            </div>
+            <div class="col-lg-10">
+                <h1>Open/Closed</h1>
+            </div>
         </div>
         <div class="row bg-info" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2"><h1>L</h1></div>
-            <div class="col-lg-10"><h3>Liskov Substitution</h3></div>
+            <div class="col-lg-2">
+                <h1>L</h1>
+            </div>
+            <div class="col-lg-10">
+                <h1>Liskov Substitution</h1>
+            </div>
         </div>
         <div class="row bg-danger" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2"><h1>I</h1></div>
-            <div class="col-lg-10"><h3>Interface Segregation</h3></div>
+            <div class="col-lg-2">
+                <h1>I</h1>
+            </div>
+            <div class="col-lg-10">
+                <h1>Interface Segregation</h1>
+            </div>
         </div>
         <div class="row bg-success">
-            <div class="col-lg-2"><h1>D</h1></div>
-            <div class="col-lg-10"><h3>Dependency Injection</h3></div>
+            <div class="col-lg-2">
+                <h1>D</h1>
+            </div>
+            <div class="col-lg-10" data-bind="click: loadDI">
+                <h1>Dependency Injection</h1>
+                <div data-bind="compose: diVM"></div>
+            </div>
         </div>
-        <br/ >
-        <div class="row"><button class="btn btn-primary btn-lg" data-bind="slideVisible: focused, click: next"><i class="fa fa-eyedropper"></i>&nbsp;Injections R Us</button></div>
+        <button class="btn btn-default" data-bind="visible: focused() && !stinkCloud(), click: showStink">What's That Smell?</button>
+        <br/>
+        <div class="row" data-bind="slideVisible: stinkCloud">
+            <div class="col-lg-4">
+                <img src="/css/images/codeSmell.jpg" alt="">
+            </div>
+            <div class="col-lg-8" data-bind="click: forward">
+                <h2>Code Smells</h2>
+                <h3>
+                    <ol class="list-unstyled">
+                        <li>Large views/viewmodels</li>
+                        <li data-bind="fadeVisible: activeStep() > 1">DRY Violations</li>
+                        <li data-bind="fadeVisible: activeStep() > 2">Tons of jQuery in your viewmodel</li>
+                        <li data-bind="fadeVisible: activeStep() > 3">Business objects in your viewmodel</li>
+                    </ol>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary btn-lg" data-bind="slideVisible: stinkCloud, click: next"><i class="fa fa-female"></i>&nbsp;Who Are You?&nbsp;<i class="fa fa-male"></i>
+            </button>
+        </div>
     </div>
 </section>

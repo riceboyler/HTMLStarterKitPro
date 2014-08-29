@@ -1,4 +1,4 @@
-define(['knockout', 'plugins/router'], function(ko, router) {
+define(['knockout'], function(ko) {
     var vm = {
         activeStep: ko.observable(1)
     };

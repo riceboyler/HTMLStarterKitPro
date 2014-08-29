@@ -13,7 +13,6 @@
                 { route: 'whoAmI', title: 'Who Am I?', moduleId: 'viewmodels/whoAmI', nav: true },
                 { route: 'tresta', title: 'What I Do (Now)', moduleId: 'viewmodels/tresta', nav: true },
                 { route: 'solid', title: 'SOLID, Man', moduleId: 'viewmodels/solid', nav: true},
-                { route: 'di', title: 'DI or Die', moduleId: 'viewmodels/di', nav: true },
                 { route: 'auth', title: 'Who Are You?', moduleId: 'viewmodels/auth', nav: true },
                 { route: 'hotness', title: 'Make It Hot', moduleId: 'viewmodels/hotness', nav: true },
                 { route: 'widgets', title: 'Widgetize', moduleId: 'viewmodels/widgets', nav: true },
