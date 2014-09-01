@@ -7,10 +7,6 @@ describe('viewmodels/shell', function() {
         expect(shell.router).toBeDefined();
     });
 
-    it('should have more than 3 routes', function() {
-        expect(shell.router()routes.length).toBeGreaterThan(3);
-    });
-
     describe('activate', function() {
 
         it('should be a property of type function', function() {

@@ -35,7 +35,7 @@ describe('viewmodels/whoAmI', function() {
         it('should set step2 to true', function() {
             whoAmI.showStep2();
             expect(whoAmI.step2).toBeTruthy();
-        })
+        });
     });
 
     describe('showStep3', function() {
