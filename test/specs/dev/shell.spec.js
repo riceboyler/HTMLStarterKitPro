@@ -7,8 +7,8 @@ describe('viewmodels/shell', function() {
         expect(shell.router).toBeDefined();
     });
 
-    it('should have a "search" property of type function', function() {
-        expect(shell.search).toBeDefined();
+    it('should have more than 3 routes', function() {
+        expect(shell.router()routes.length).toBeGreaterThan(3);
     });
 
     describe('activate', function() {

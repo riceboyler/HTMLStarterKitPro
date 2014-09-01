@@ -3,47 +3,49 @@
         <div class="row">
             <h1>Get SOLID Man!</h1>
         </div>
-        <div class="row bg-primary" data-bind="click: focus">
-            <div class="col-lg-2">
-                <h1>S</h1>
-            </div>
-            <div class="col-lg-10">
-                <h1>Single Responsibility</h1>
-                <div data-bind="compose: singleVM"></div>
-            </div>
+        <div data-bind="slideVisible: !stinkCloud()">
+            <div class="row bg-primary" data-bind="click: focus">
+                <div class="col-lg-2">
+                    <h1>S</h1>
+                </div>
+                <div class="col-lg-10">
+                    <h1>Single Responsibility</h1>
+                    <div data-bind="compose: singleVM"></div>
+                </div>
 
-        </div>
-        <div class="row bg-warning" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2">
-                <h1>O</h1>
             </div>
-            <div class="col-lg-10">
-                <h1>Open/Closed</h1>
+            <div class="row bg-warning" data-bind="slideVisible: !focused()">
+                <div class="col-lg-2">
+                    <h1>O</h1>
+                </div>
+                <div class="col-lg-10">
+                    <h1>Open/Closed</h1>
+                </div>
             </div>
-        </div>
-        <div class="row bg-info" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2">
-                <h1>L</h1>
+            <div class="row bg-info" data-bind="slideVisible: !focused()">
+                <div class="col-lg-2">
+                    <h1>L</h1>
+                </div>
+                <div class="col-lg-10">
+                    <h1>Liskov Substitution</h1>
+                </div>
             </div>
-            <div class="col-lg-10">
-                <h1>Liskov Substitution</h1>
+            <div class="row bg-danger" data-bind="slideVisible: !focused()">
+                <div class="col-lg-2">
+                    <h1>I</h1>
+                </div>
+                <div class="col-lg-10">
+                    <h1>Interface Segregation</h1>
+                </div>
             </div>
-        </div>
-        <div class="row bg-danger" data-bind="slideVisible: !focused()">
-            <div class="col-lg-2">
-                <h1>I</h1>
-            </div>
-            <div class="col-lg-10">
-                <h1>Interface Segregation</h1>
-            </div>
-        </div>
-        <div class="row bg-success">
-            <div class="col-lg-2">
-                <h1>D</h1>
-            </div>
-            <div class="col-lg-10" data-bind="click: loadDI">
-                <h1>Dependency Injection</h1>
-                <div data-bind="compose: diVM"></div>
+            <div class="row bg-success">
+                <div class="col-lg-2">
+                    <h1>D</h1>
+                </div>
+                <div class="col-lg-10" data-bind="click: loadDI">
+                    <h1>Dependency Injection</h1>
+                    <div data-bind="compose: diVM"></div>
+                </div>
             </div>
         </div>
         <button class="btn btn-default" data-bind="visible: focused() && !stinkCloud(), click: showStink">What's That Smell?</button>

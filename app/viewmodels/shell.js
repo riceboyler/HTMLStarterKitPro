@@ -16,7 +16,7 @@
                 { route: 'auth', title: 'Who Are You?', moduleId: 'viewmodels/auth', nav: true },
                 { route: 'hotness', title: 'Make It Hot', moduleId: 'viewmodels/hotness', nav: true },
                 { route: 'widgets', title: 'Widgetize', moduleId: 'viewmodels/widgets', nav: true },
-                { route: 'routing', title: 'I-75', moduled: 'viewmodels/routing', nav: true}
+                { route: 'routing', title: 'I-75', moduled: 'viewmodels/routing', nav: false}
             ]).buildNavigationModel();
 
             return router.activate();
