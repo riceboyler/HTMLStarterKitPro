@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h2>First Things First: ViewModels</h2>
+
+            <div class="col-md-6">
+                <h3 data-bind="click: clickObj">Object Literal</h3>
+
+                <div class="highlight text-left" data-bind="slideVisible: showObjectLiteral">
+                    <pre>
+                            define(function() {
+                                var vm = {
+                                    property: value
+                                };
+
+                                return vm;
+                            });
+                    </pre>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <h3>Singleton Pattern: In Durandal, when you create a module using a singleton pattern, it is cached (aggressively), and there is only one available instance at any time in the app.</h3>
+                        </li>
+                        <li>
+                            <h3>Be VERY careful about using when you use/don't use the Singleton Pattern. There are consequences...</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 data-bind="click: clickConst">Constructor Function</h3>
+
+                <div class="highlight text-left" data-bind="slideVisible: showConstructorFunction">
+                    <pre>
+                        define(function() {
+                            var vm = function() {
+                                var self = this;
+
+                                self.property = value;
+                            };
+
+                            return vm;
+                        });
+                    </pre>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <h3>Constructor Function is typical Object Oriented pattern. Create as many instances of the module as you need.</h3>
+                        </li>
+                        <li>
+                            <h3>Like the Singleton Pattern, for reasons of performance/memory usage, consider how many instances of a module you want running at once.</h3>
+                        </li>
+                        <li>
+                            <h3>Make your life easier: use <i>self</i> and embrace the Revealing Module Pattern.</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center" data-bind="fadeVisible: showConstructorFunction">
+        <button class="btn btn-primary" data-bind="click: next"><i class="fa fa-left-arrow"></i>SOLID, man!</button>
+    </div>
+</div>

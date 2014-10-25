@@ -8,7 +8,7 @@ define(['knockout', 'plugins/router'], function(ko, router) {
     };
 
     vm.next = function() {
-        router.navigate("auth");
+        router.navigate("firstThings");
     };
 
     return vm;

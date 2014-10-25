@@ -6,26 +6,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3">
-                <h2>JavaScript</h2>
-                <input type="number" data-bind="value: jsUsers, visible: showJSInput, event: { blur: blurJS }" />
-                <h3 data-bind="text: jsUsers() + ' Users', visible: !showJSInput()"></h3>
-            </div>
-            <div class="col-lg-3">
-                <h2>Knockout</h2>
-                <input type="number" data-bind="value: koUsers, visible: showKOInput, event: { blur: blurKO }" />
-                <h3 data-bind="text: koUsers() + ' Users', visible: !showKOInput()"></h3>
-            </div>
-            <div class="col-lg-3">
-                <h2>Durandal</h2>
-                <input type="number" data-bind="value: durandalUsers, visible: showDurandalInput, event: { blur: blurDurandal }" />
-                <h3 data-bind="text: durandalUsers() + ' Users', visible: !showDurandalInput()"></h3>
-            </div>
-            <div class="col-lg-3">
-                <h2>Angular</h2>
-                <input type="number" data-bind="value: ngUsers, visible: showNgInput, event: { blur: blurNg }" />
-                <h3 data-bind="text: ngUsers() + ' Users', visible: !showNgInput()"></h3>
-            </div>
+            <div data-bind="counterPanel: { dotnet: true, javascript: false }"></div>
         </div>
     </div>
     <div class="container" data-bind="slideVisible: activeStep() === 2">
@@ -50,7 +31,8 @@
                 <ul class="list-unstyled">
                     <li><a href="http://durandalauth.azurewebsites.net" target="_blank">http://durandalauth.azurewebsites.net</a>
                     </li>
-                    <li><a href="https://github.com/yagopv/durandalauth" target="_blank">https://github.com/yagopv/durandalauth</a></li>
+                    <li><a href="https://github.com/yagopv/durandalauth" target="_blank">https://github.com/yagopv/durandalauth</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -76,10 +58,13 @@
             </div>
         </div>
     </div>
-    <br />
+    <br/>
+
     <div class="container">
         <div class="row">
-            <button class="btn btn-primary" data-bind="click: nextStep"><i class="fa fa-arrow-right"></i>&nbsp;Moving On...</button>
+            <button class="btn btn-primary" data-bind="click: nextStep"><i class="fa fa-arrow-right"></i>&nbsp;Moving
+                On...
+            </button>
         </div>
     </div>
 </section>

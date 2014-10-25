@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Who Are You?</h3>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-2">
+                    <label for="">JavaScript</label><br/>
+                    <input type="number" data-bind="value: jsUsers"/>
+                </div>
+                <div class="col-md-2">
+                    <label for="">Knockout</label><br/>
+                    <input data-bind="value: koUsers" type="number"/>
+                </div>
+                <div class="col-md-2">
+                    <label for="">Durandal</label><br/>
+                    <input data-bind="value: durUsers" type="number"/>
+                </div>
+                <div class="col-md-2">
+                    <label for="">Angular</label><br/>
+                    <input data-bind="value: ngUsers" type="number"/>
+                </div>
+                <div data-bind="visible: dotnet">
+                    <div class="col-md-2">
+                        <label for="">Silverlight</label><br/>
+                        <input type="number" data-bind="value: silverlightUsers"/>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="">WPF</label><br/>
+                        <input type="number" data-bind="value:wpfUsers"/>
+                    </div>
+                </div>
+                <div data-bind="visible: false">
+                    <div class="col-md-2">
+                        <label>Backbone</label><br/>
+                        <input type="number" data-bind="value: bbUsers"/>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Ember</label><br/>
+                        <input type="number" data-bind="value: emberUsers"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

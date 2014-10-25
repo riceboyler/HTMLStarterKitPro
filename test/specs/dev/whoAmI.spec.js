@@ -15,7 +15,7 @@ describe('viewmodels/whoAmI', function() {
     });
 
     describe('showStep1', function() {
-        it('should be a propety of type function', function() {
+        it('should be a property of type function', function() {
             expect(whoAmI.showStep1).toBeDefined();
             expect(typeof whoAmI.showStep1 === "function").toBeTruthy();
         });
